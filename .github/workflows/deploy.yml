@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn deploy
+          yarn build
 
       - name: Deploy
         uses: actions/deploy-pages@v1
