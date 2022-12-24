@@ -23,11 +23,6 @@ jobs:
       - name: Build
         run: |
           yarn install
+          git config --global user.email "nicelestin08@gmail.com"
+          git config --global user.name "Celestin Niyindagiriye"
           yarn build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.0
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          branch: gh-pages
-          publish_dir: ./out
