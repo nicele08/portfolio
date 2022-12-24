@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && touch out/.nojekyll && git add out/ && GIT_AUTHOR_EMAIL=\"nicelestin08@email.com\" && GIT_AUTHOR_NAME=\"Celestin Niyindagiriye\" git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "next": "latest",
