@@ -4,7 +4,8 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  basePath: '/portfolio',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  basePath: '/nicele08',
 }
 
 module.exports = nextConfig
