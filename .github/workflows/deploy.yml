@@ -22,11 +22,8 @@ jobs:
 
       - name: Build
         run: |
+          git config --global user.email "nicelestin08@gmail.com"
+          git config --global user.name "Celestin Niyindagiriye"
           yarn install
-          yarn build
+          yarn deploy
 
-      - name: Deploy
-        uses: actions/deploy-pages@v1
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
