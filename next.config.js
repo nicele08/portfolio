@@ -5,7 +5,7 @@
  **/
 const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
-  basePath: '/nicele08',
+  basePath: '/portfolio',
 }
 
 module.exports = nextConfig
