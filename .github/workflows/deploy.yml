@@ -19,11 +19,9 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "yarn"
-
-      - name: Build
-        run: |
-          git config --global user.email "nicelestin08@gmail.com"
-          git config --global user.name "Celestin Niyindagiriye"
+      - name: Install Dependencies
+        run:
           yarn install
-          yarn deploy
-
+      - name: Build
+        run:
+          yarn build
