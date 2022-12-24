@@ -23,9 +23,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          git config --global user.email "nicelestin08@gmail.com"
-          git config --global user.name "Celestin Niyindagiriye"
-          yarn deploy
+          yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
